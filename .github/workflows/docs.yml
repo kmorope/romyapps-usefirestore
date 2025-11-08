@@ -53,15 +53,15 @@ jobs:
           import { defineConfig } from 'vitepress'
 
           export default defineConfig({
-            title: '@romy/usefirestore',
+            title: '@romyapps/usefirestore',
             description: 'Headless Firestore hooks powered by TanStack Query',
-            base: '/romy-usefirestore/',
+            base: '/romyapps-usefirestore/',
             themeConfig: {
               logo: '🔥',
               nav: [
                 { text: 'Home', link: '/' },
-                { text: 'npm', link: 'https://www.npmjs.com/package/@romy/usefirestore' },
-                { text: 'GitHub', link: 'https://github.com/kmorope/romy-usefirestore' }
+                { text: 'npm', link: 'https://www.npmjs.com/package/@romyapps/usefirestore' },
+                { text: 'GitHub', link: 'https://github.com/kmorope/romyapps-usefirestore' }
               ],
               sidebar: [
                 {
@@ -112,7 +112,7 @@ jobs:
                 }
               ],
               socialLinks: [
-                { icon: 'github', link: 'https://github.com/kmorope/romy-usefirestore' }
+                { icon: 'github', link: 'https://github.com/kmorope/romyapps-usefirestore' }
               ],
               footer: {
                 message: 'Released under the MIT License.',

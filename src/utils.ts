@@ -137,8 +137,8 @@ export function recordReadStats(
   collectionName: string
 ) {
   if (!storage) return;
-  const key = `@romy:readCount::${collectionName}`;
-  const lastFetchedKey = `@romy:lastFetched::${collectionName}`;
+  const key = `@romyapps:readCount::${collectionName}`;
+  const lastFetchedKey = `@romyapps:lastFetched::${collectionName}`;
   const count = Number(storage.getItem(key) ?? "0");
   const updated = count + 1;
   storage.setItem(key, String(updated));
@@ -152,10 +152,10 @@ export function getCollectionStats(
 ) {
   if (!storage) return { readCount: 0, lastFetched: null as string | null };
   const readCount = Number(
-    storage.getItem(`@romy:readCount::${collectionName}`) ?? "0"
+    storage.getItem(`@romyapps:readCount::${collectionName}`) ?? "0"
   );
   const lastFetched =
-    storage.getItem(`@romy:lastFetched::${collectionName}`) ?? null;
+    storage.getItem(`@romyapps:lastFetched::${collectionName}`) ?? null;
   return { readCount, lastFetched };
 }
 
@@ -164,8 +164,8 @@ export function clearCollectionStats(
   collectionName: string
 ) {
   if (!storage) return;
-  storage.removeItem(`@romy:readCount::${collectionName}`);
-  storage.removeItem(`@romy:lastFetched::${collectionName}`);
+  storage.removeItem(`@romyapps:readCount::${collectionName}`);
+  storage.removeItem(`@romyapps:lastFetched::${collectionName}`);
 }
 
 export function clearAllCollectionStats(storage: StorageLike | null) {
@@ -175,8 +175,8 @@ export function clearAllCollectionStats(storage: StorageLike | null) {
     const k = storage.key(i);
     if (!k) continue;
     if (
-      k.startsWith("@romy:readCount::") ||
-      k.startsWith("@romy:lastFetched::")
+      k.startsWith("@romyapps:readCount::") ||
+      k.startsWith("@romyapps:lastFetched::")
     ) {
       toRemove.push(k);
     }

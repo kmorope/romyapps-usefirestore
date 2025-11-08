@@ -6,7 +6,7 @@
  */
 
 const GITHUB_USERNAME = "kmorope";
-const REPO_NAME = "romy-usefirestore";
+const REPO_NAME = "romyapps-usefirestore";
 
 console.log("🚀 Setting up GitHub Pages documentation...\n");
 

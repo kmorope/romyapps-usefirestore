@@ -1,12 +1,12 @@
-# @romy/usefirestore
+# @romyapps/usefirestore
 
 > Headless Firestore hooks powered by TanStack Query for React 18/19. Fully configurable with built-in caching, logging, and debugging.
 
-[![npm version](https://badge.fury.io/js/@romy%2Fusefirestore.svg)](https://www.npmjs.com/package/@romy/usefirestore)
-[![Documentation](https://img.shields.io/badge/docs-vitepress-blue)](https://kmorope.github.io/romy-usefirestore/)
+[![npm version](https://badge.fury.io/js/@romyapps%2Fusefirestore.svg)](https://www.npmjs.com/package/@romyapps/usefirestore)
+[![Documentation](https://img.shields.io/badge/docs-vitepress-blue)](https://kmorope.github.io/romyapps-usefirestore/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-📚 **[View Full Documentation](https://kmorope.github.io/romy-usefirestore/)** | 📦 **[npm](https://www.npmjs.com/package/@romy/usefirestore)** | 🐛 **[Issues](https://github.com/kmorope/romy-usefirestore/issues)**
+📚 **[View Full Documentation](https://kmorope.github.io/romyapps-usefirestore/)** | 📦 **[npm](https://www.npmjs.com/package/@romyapps/usefirestore)** | 🐛 **[Issues](https://github.com/kmorope/romyapps-usefirestore/issues)**
 
 ## Features
 
@@ -22,13 +22,13 @@
 ## Installation
 
 ```bash
-npm install @romy/usefirestore
+npm install @romyapps/usefirestore
 # or
-yarn add @romy/usefirestore
+yarn add @romyapps/usefirestore
 # or
-pnpm add @romy/usefirestore
+pnpm add @romyapps/usefirestore
 # or
-bun add @romy/usefirestore
+bun add @romyapps/usefirestore
 ```
 
 ### Peer Dependencies
@@ -44,7 +44,7 @@ npm install firebase @tanstack/react-query react
 Wrap your app with `FirebaseConfigProvider`:
 
 ```tsx
-import { FirebaseConfigProvider } from "@romy/usefirestore";
+import { FirebaseConfigProvider } from "@romyapps/usefirestore";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -83,7 +83,11 @@ function App() {
 ### 2. Use Hooks in Components
 
 ```tsx
-import { useCollection, useDocument, useAddDocument } from "@romy/usefirestore";
+import {
+  useCollection,
+  useDocument,
+  useAddDocument,
+} from "@romyapps/usefirestore";
 
 function UsersList() {
   // Fetch a collection
@@ -431,7 +435,7 @@ import {
   getCollectionStats,
   clearCollectionStats,
   clearAllCollectionStats,
-} from "@romy/usefirestore";
+} from "@romyapps/usefirestore";
 
 // Get stats for a collection
 const stats = getCollectionStats("users");
@@ -603,7 +607,7 @@ import {
   useAddDocument,
   useUpdateDocument,
   useDeleteDocument,
-} from "@romy/usefirestore";
+} from "@romyapps/usefirestore";
 
 interface Todo {
   title: string;

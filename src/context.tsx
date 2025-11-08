@@ -17,7 +17,7 @@ export function useFirebaseConfig(): UseFirebaseConfig {
   const cfg = useContext(Ctx);
   if (!cfg) {
     throw new Error(
-      "@romy/useFirestore → No provider found. Wrap your app with <UseFirebaseProvider config={...} />"
+      "@romyapps/useFirestore → No provider found. Wrap your app with <UseFirebaseProvider config={...} />"
     );
   }
   return cfg;
