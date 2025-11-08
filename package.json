@@ -1,6 +1,6 @@
 {
   "name": "@romyapps/usefirestore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Headless Firestore hooks powered by TanStack Query (React 18/19). Fully configurable.",
   "license": "MIT",
   "type": "module",
