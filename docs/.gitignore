@@ -1,0 +1,6 @@
+# Local development files
+docs/.vitepress/cache
+docs/.vitepress/dist
+
+# Don't commit index.md as it's generated from README
+docs/index.md
